@@ -4,7 +4,7 @@ import torch.nn.functional as F
 from torch import nn as nn
 
 class UNetp(nn.Module):
-    def __init__(self, in_channels, out_im_channels, mlp_in_channels, mlp_out_channels, batchnorm=True, dropout=0.0, bc=64):
+    def __init__(self, in_channels, out_im_channels, mlp_in_channels, mlp_out_channels=32, batchnorm=True, dropout=0.0, bc=64):
         super(UNetp, self).__init__()
 
         self.inc = inconv(in_channels, bc*1, batchnorm)

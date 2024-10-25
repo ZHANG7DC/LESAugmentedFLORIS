@@ -1,0 +1,9 @@
+weight_file: "weights/yaw/0.pth"
+les_test_dir: "./les/yaw/test"
+floris_dir: "./floris/yaw/test"
+save_dir: "./results/yaw"
+batch_size: 1
+input_channels: 142
+output_channels: 142
+param_dim: 5
+batchnorm: false
